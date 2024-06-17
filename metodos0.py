@@ -53,3 +53,31 @@ print(max(nums))  # isto mostrará o valor "33"
 herois = ["Zorro", "Capitão América", "Hulk", "Super-Homem"]
 
 print(max(herois))  # isto mostrará o valor "Zorro"
+
+# ------------------função sorted() / reverse----------------------
+nums = [17, 33, 8, 11, 8, 15, 9]
+
+sorted(nums)  # isto resultará em [8, 8, 9, 11, 15, 17, 33]
+
+nums = [17, 33, 8, 11, 8, 15, 9]
+
+sorted(nums, reverse=True)  # isto resultará em [33, 17, 15, 11, 9, 8, 8]
+
+# Ainda, pode-se aplicar a função sorted sobre uma string, retornando uma
+# lista não editável, no caso, uma tupla, como será visto na próxima unidade
+
+nome = "José dos Santos"
+
+sorted(nome)
+
+# isto resultará em:
+# [' ', ' ', 'J', 'S', 'a', 'd', 'n', 'o', 'o', 'o', 's', 's', 's', 't', 'é']
+# Cabe salientar que os espaços em branco tem valor maior seguido das letras
+# em maiúsculo seguido das letras em minúsculo
+
+# ------------------função sun()---------------------------------
+
+nums = [17, 33, 8, 11, 8, 15, 9]
+
+print(sum(nums))  # isto resultará em "101"
+# retorna a soma de todos os valores da lista
